@@ -55,19 +55,19 @@
             "Male",
             "Female",
             "Other"});
-            this.cmbUpdateGender.Location = new System.Drawing.Point(367, 349);
+            this.cmbUpdateGender.Location = new System.Drawing.Point(302, 354);
             this.cmbUpdateGender.Name = "cmbUpdateGender";
-            this.cmbUpdateGender.Size = new System.Drawing.Size(245, 33);
+            this.cmbUpdateGender.Size = new System.Drawing.Size(279, 33);
             this.cmbUpdateGender.TabIndex = 25;
             // 
             // UpdateAddress
             // 
             this.UpdateAddress.BackColor = System.Drawing.Color.Snow;
             this.UpdateAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateAddress.Location = new System.Drawing.Point(366, 225);
+            this.UpdateAddress.Location = new System.Drawing.Point(301, 230);
             this.UpdateAddress.Multiline = true;
             this.UpdateAddress.Name = "UpdateAddress";
-            this.UpdateAddress.Size = new System.Drawing.Size(246, 100);
+            this.UpdateAddress.Size = new System.Drawing.Size(280, 100);
             this.UpdateAddress.TabIndex = 24;
             // 
             // lblGender
@@ -75,7 +75,7 @@
             this.lblGender.AutoSize = true;
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(187, 350);
+            this.lblGender.Location = new System.Drawing.Point(108, 355);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(77, 25);
             this.lblGender.TabIndex = 23;
@@ -86,7 +86,7 @@
             this.lblAddress.AutoSize = true;
             this.lblAddress.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(189, 228);
+            this.lblAddress.Location = new System.Drawing.Point(110, 233);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(85, 25);
             this.lblAddress.TabIndex = 22;
@@ -98,9 +98,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.UpdateLastName.BackColor = System.Drawing.Color.Snow;
             this.UpdateLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateLastName.Location = new System.Drawing.Point(367, 129);
+            this.UpdateLastName.Location = new System.Drawing.Point(302, 134);
             this.UpdateLastName.Name = "UpdateLastName";
-            this.UpdateLastName.Size = new System.Drawing.Size(246, 30);
+            this.UpdateLastName.Size = new System.Drawing.Size(280, 30);
             this.UpdateLastName.TabIndex = 21;
             // 
             // lblContactNumber
@@ -109,7 +109,7 @@
             this.lblContactNumber.AutoSize = true;
             this.lblContactNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContactNumber.Location = new System.Drawing.Point(188, 178);
+            this.lblContactNumber.Location = new System.Drawing.Point(107, 183);
             this.lblContactNumber.Name = "lblContactNumber";
             this.lblContactNumber.Size = new System.Drawing.Size(154, 25);
             this.lblContactNumber.TabIndex = 20;
@@ -121,9 +121,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.UpdateContactNumber.BackColor = System.Drawing.Color.Snow;
             this.UpdateContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateContactNumber.Location = new System.Drawing.Point(367, 177);
+            this.UpdateContactNumber.Location = new System.Drawing.Point(302, 182);
             this.UpdateContactNumber.Name = "UpdateContactNumber";
-            this.UpdateContactNumber.Size = new System.Drawing.Size(246, 30);
+            this.UpdateContactNumber.Size = new System.Drawing.Size(280, 30);
             this.UpdateContactNumber.TabIndex = 19;
             // 
             // lblLastName
@@ -132,7 +132,7 @@
             this.lblLastName.AutoSize = true;
             this.lblLastName.BackColor = System.Drawing.Color.Transparent;
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(190, 133);
+            this.lblLastName.Location = new System.Drawing.Point(109, 138);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(106, 25);
             this.lblLastName.TabIndex = 18;
@@ -144,9 +144,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.UpdateFirstName.BackColor = System.Drawing.Color.Snow;
             this.UpdateFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateFirstName.Location = new System.Drawing.Point(367, 82);
+            this.UpdateFirstName.Location = new System.Drawing.Point(302, 87);
             this.UpdateFirstName.Name = "UpdateFirstName";
-            this.UpdateFirstName.Size = new System.Drawing.Size(246, 30);
+            this.UpdateFirstName.Size = new System.Drawing.Size(280, 30);
             this.UpdateFirstName.TabIndex = 17;
             // 
             // lblFirstName
@@ -155,7 +155,7 @@
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(190, 86);
+            this.lblFirstName.Location = new System.Drawing.Point(109, 91);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(106, 25);
             this.lblFirstName.TabIndex = 16;
@@ -167,18 +167,17 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.UpdateID.BackColor = System.Drawing.Color.Snow;
             this.UpdateID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateID.Location = new System.Drawing.Point(367, 37);
+            this.UpdateID.Location = new System.Drawing.Point(302, 42);
             this.UpdateID.Name = "UpdateID";
-            this.UpdateID.Size = new System.Drawing.Size(246, 30);
+            this.UpdateID.Size = new System.Drawing.Size(280, 30);
             this.UpdateID.TabIndex = 15;
             // 
             // lblContactID
             // 
             this.lblContactID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblContactID.AutoSize = true;
             this.lblContactID.BackColor = System.Drawing.Color.Transparent;
             this.lblContactID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContactID.Location = new System.Drawing.Point(190, 42);
+            this.lblContactID.Location = new System.Drawing.Point(109, 47);
             this.lblContactID.Name = "lblContactID";
             this.lblContactID.Size = new System.Drawing.Size(104, 25);
             this.lblContactID.TabIndex = 14;
@@ -189,7 +188,7 @@
             this.button2.BackColor = System.Drawing.Color.OliveDrab;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(430, 425);
+            this.button2.Location = new System.Drawing.Point(372, 424);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 38);
             this.button2.TabIndex = 27;
@@ -201,7 +200,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(248, 425);
+            this.button1.Location = new System.Drawing.Point(199, 424);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 38);
             this.button1.TabIndex = 26;
@@ -214,7 +213,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(800, 486);
+            this.ClientSize = new System.Drawing.Size(701, 486);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbUpdateGender);
@@ -231,6 +230,7 @@
             this.Controls.Add(this.lblContactID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateForm";
             this.ResumeLayout(false);
             this.PerformLayout();
