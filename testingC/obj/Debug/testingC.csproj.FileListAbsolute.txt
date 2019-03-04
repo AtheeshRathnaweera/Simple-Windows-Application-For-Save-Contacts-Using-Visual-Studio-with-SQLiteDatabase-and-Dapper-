@@ -13,3 +13,5 @@ D:\testingC\testingC\bin\Debug\Dapper.xml
 D:\testingC\testingC\bin\Debug\System.Data.SQLite.xml
 D:\testingC\testingC\bin\Debug\System.Data.SQLite.dll.config
 D:\testingC\testingC\obj\Debug\testingC.csproj.CopyComplete
+D:\testingC\testingC\obj\Debug\testingC.Form2.resources
+D:\testingC\testingC\obj\Debug\testingC.UpdateForm.resources

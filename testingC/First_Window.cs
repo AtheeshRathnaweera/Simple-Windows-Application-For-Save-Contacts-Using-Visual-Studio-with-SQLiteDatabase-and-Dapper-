@@ -18,11 +18,7 @@ namespace testingC
 
     public partial class First_Window : Form
     {
-
-
-       List<contactClass> contacts = new List<contactClass>();
       
-
         public First_Window()
         {
             InitializeComponent();
@@ -30,8 +26,8 @@ namespace testingC
         }
 
         public void LoadContactList() {
-           
-            contacts = SQLiteAccess.LoadContact();
+
+            List<contactClass> contacts = SQLiteAccess.LoadContact();
 
             //contacts.Add(new contactClass { ContactID=1 ,FirstName = "Atheesh", LastName="Rathnaweera" });
             //contacts.Add(new contactClass { ContactID = 2, FirstName = "Buddhika", LastName = "Rathnaweera" });
@@ -39,15 +35,15 @@ namespace testingC
             int numberOfContacts = contacts.Count;
             Console.WriteLine("Found : "+numberOfContacts+" Data "+contacts[0].FirstName+" "+contacts[1].FirstName);
 
-      
+            foreach (contactClass item in contacts.OrderBy(x => x.FirstName))
+                Console.WriteLine(item);
 
-
-            WiredUpPeopleList();
+            WiredUpPeopleList(contacts);
         }
 
-        public void WiredUpPeopleList() {
+        public void WiredUpPeopleList(List<contactClass> resContacts) {
             contactListBox.DataSource = null;
-            contactListBox.DataSource = contacts;
+            contactListBox.DataSource = resContacts;
             contactListBox.DisplayMember = "FullName";
         }
 
@@ -75,6 +71,19 @@ namespace testingC
 
         }
 
+        public bool ValidateEntries() {
+
+            bool success = false;
+
+            if (!string.IsNullOrEmpty(txtboxFirstName.Text) && !string.IsNullOrEmpty(txtboxContactNumber.Text))
+            {
+                return success = true;
+            }
+            else {
+                return success;
+            }
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             //Get values from input fields to save 
@@ -85,18 +94,26 @@ namespace testingC
             
             Console.WriteLine("obj : "+obj);
 
-        
-            bool result = SQLiteAccess.SaveAContact(res);
-
-            if (result)
+            if (ValidateEntries())
             {
-               
-                ClearFields();
-                MessageBox.Show("New contact saved.");
+                bool result = SQLiteAccess.SaveAContact(res);
+
+                if (result)
+                {
+
+                    ClearFields();
+                    MessageBox.Show("New contact saved.");
+                }
+                else
+                {
+
+                }
             }
             else {
-
+                MessageBox.Show("First name and Contact number must be filled!");
             }
+        
+           
 
      
 
@@ -106,7 +123,7 @@ namespace testingC
         }
 
         public void ClearFields() {
-            txtboxContactID.Text = "";
+            
             txtboxFirstName.Text = "";
             txtboxLastName.Text = "";
             txtboxContactNumber.Text = "";
@@ -124,7 +141,7 @@ namespace testingC
         }
 
         private void button4_Click(object sender, EventArgs e) {
-
+            ClearFields();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -134,22 +151,9 @@ namespace testingC
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Update button clicked.");
-            contactClass res = new contactClass();
-            res = CreateAObject();
-            int x = 0;
+            ShowUpdateForm();
 
-            Int32.TryParse(txtboxContactID.Text, out x);
-
-            res.ContactID = x;
-
-            bool result = SQLiteAccess.UpdateAContact(res);
-
-            if (result) {
-
-                ClearFields();
-                MessageBox.Show("Updated successfully.");
-            }
+           
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -159,23 +163,69 @@ namespace testingC
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            contactClass temp = new contactClass();
-            temp = CreateAObject();
-            int x = 0;
 
-            Int32.TryParse(txtboxContactID.Text, out x);
+            ShowMyDialogBox();
 
-            temp.ContactID = x;
+          /*  */
+        }
 
-            bool res = SQLiteAccess.Delete(temp);
+        private void First_Window_Load(object sender, EventArgs e)
+        {
+            
+        }
 
-            if (res) {
-                ClearFields();
-                MessageBox.Show("Deleted successfully.");
+        public void ShowUpdateForm() {
+            UpdateForm update = new UpdateForm();
+            update.ShowDialog(this);
+        }
+
+        public void ShowMyDialogBox()
+        {
+            Form2 testDialog = new Form2();
+           
+            // Show testDialog as a modal dialog and determine if DialogResult = OK.
+            if (testDialog.ShowDialog(this) == DialogResult.OK)
+            {
+                if (!string.IsNullOrEmpty(testDialog.txtBoxDeleteId.Text) ){
+                    // Read the contents of testDialog's TextBox.
+                    string id = testDialog.txtBoxDeleteId.Text;
+                    testDialog.Dispose();
+                    Console.WriteLine("Ok button clicked! This is the id: " + id);
+
+
+                    contactClass temp = new contactClass();
+                    temp = CreateAObject();
+                    int x = 0;
+
+                    Int32.TryParse(id, out x);
+
+                    temp.ContactID = x;
+
+                    bool res = SQLiteAccess.Delete(temp);
+
+                    if (res)
+                    {
+                        ClearFields();
+                        MessageBox.Show("Deleted successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error occured. Nothing deleted.");
+                    }
+                }
+                else {
+                    MessageBox.Show("Nothing deleted. Please set valid ID to delete!");
+               
+                }
+
+            }  
+            else
+            {
+                testDialog.Dispose();
+               
+                //this.txtBoxDeleteId.Text = "Cancelled";
             }
-            else {
-
-            }
+           
         }
     }
 }

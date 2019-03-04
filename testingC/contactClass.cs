@@ -27,6 +27,11 @@ namespace testingC.ProjectClasses
             }
         }
 
+        public override string ToString()
+        {
+            return string.Format("My name is {0} {1} .This is my id: {2}.", FirstName, LastName, ContactID);
+        }
+
     }
  
     }

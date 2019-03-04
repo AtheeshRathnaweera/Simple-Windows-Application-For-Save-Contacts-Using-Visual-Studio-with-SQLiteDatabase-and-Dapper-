@@ -38,6 +38,8 @@ namespace testingC.ProjectClasses
                 int i = cnn.Execute("INSERT INTO CONTACT_DETAILS (FIRST_NAME, LAST_NAME, CONTACT_NUMBER, ADDRESS, GENDER) VALUES (@FirstName," +
                     "@LastName,@ContactNumber,@Address,@Gender)", c);
 
+                cnn.Close();
+
                 if (i > 0)
                 {
                     Console.WriteLine("Saved successfully");
