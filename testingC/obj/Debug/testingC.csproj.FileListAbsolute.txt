@@ -1,0 +1,15 @@
+D:\testingC\testingC\bin\Debug\testingC.exe.config
+D:\testingC\testingC\bin\Debug\testingC.exe
+D:\testingC\testingC\bin\Debug\testingC.pdb
+D:\testingC\testingC\obj\Debug\testingC.csprojAssemblyReference.cache
+D:\testingC\testingC\obj\Debug\testingC.First_Window.resources
+D:\testingC\testingC\obj\Debug\testingC.Properties.Resources.resources
+D:\testingC\testingC\obj\Debug\testingC.csproj.GenerateResource.cache
+D:\testingC\testingC\obj\Debug\testingC.csproj.CoreCompileInputs.cache
+D:\testingC\testingC\obj\Debug\testingC.exe
+D:\testingC\testingC\obj\Debug\testingC.pdb
+D:\testingC\testingC\bin\Debug\myDatabase.db
+D:\testingC\testingC\bin\Debug\Dapper.xml
+D:\testingC\testingC\bin\Debug\System.Data.SQLite.xml
+D:\testingC\testingC\bin\Debug\System.Data.SQLite.dll.config
+D:\testingC\testingC\obj\Debug\testingC.csproj.CopyComplete
